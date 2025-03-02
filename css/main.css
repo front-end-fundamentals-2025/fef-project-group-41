@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel:wght@400..900&family=Glory:ital,wght@0,100..800;1,100..800&family=League+Gothic&family=Macondo&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Grotesk:wght@300..700&family=Ysabeau+SC:wght@1..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+img {
+  height: 100%;
+  max-width: 100%;
+}
+.fotoH {
+  display: block;
+  width: 100vw;
+  padding-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 40px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mostrar {
+  padding: 10px 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 30px;
+}
+
+footer {
+  padding-bottom: 50px;
+}
+
+.material-icons {
+  font-size: 36px;
+  color: red;
+}
+
+* {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
