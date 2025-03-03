@@ -119,3 +119,12 @@ footer {
 .image-container:hover .overlay {
   opacity: 1;
 }
+
+.home{
+  display: inline;
+
+}
+.car{
+  display: inline;
+  text-align: right;
+}
