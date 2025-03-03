@@ -84,7 +84,9 @@ footer {
 
 .image-container {
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  
 }
 
 .grid-container img {
