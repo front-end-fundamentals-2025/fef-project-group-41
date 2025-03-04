@@ -9,7 +9,7 @@ img {
 
 
 .titu {
-  font-size: 80px;
+  font-size: 60px;
 }
 
 h1 {
@@ -35,6 +35,8 @@ a {
 
 footer {
   padding-bottom: 50px;
+  padding-top: 80px;
+  padding-left: 20px;
 }
 
 .material-icons {
@@ -60,13 +62,19 @@ footer {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-bottom: 30px;
-  padding-top: 40px;
+  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
   gap: 50px;
+}
+.botones{
+  padding-left: 40px;
 }
 .grid figure {
   margin: 0;
   text-align: center;
+
 }
 
 .grid img {
