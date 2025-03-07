@@ -42,15 +42,13 @@ footer {
   color: red;
 }
 
-body {
+* {
   background-color: black;
   color: white;
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
-  background-color: black;
-  color: white;
   margin: 0;
 }
 
@@ -133,36 +131,43 @@ body {
 }
 .product-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
-  gap: 20px; /* Espacio entre las columnas */
-  padding: 20px; /* Añade un poco de espacio alrededor del grid */
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-info h1 {
+  margin-bottom: 40px;
 }
 
 .product-image img {
-  max-width: 100%; /* La imagen no debe exceder el ancho del contenedor */
-  height: auto;
+  max-width: 100%;
+  height: 90%;
+  border-radius: 10px;
+  margin-left: 50px;
 }
 
 .add-to-cart {
-  text-align: center; /* Centra el botón */
-  padding: 20px; /* Añade un poco de espacio alrededor del botón */
+  text-align: center;
+  padding: 20px;
 }
 
 .add-button {
-  background-color: #4caf50; /* Verde */
+  background-color: #4caf50;
   border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: block;
   font-size: 20px;
   border-radius: 5px;
   cursor: pointer;
+  margin: 50px auto 0;
 }
 
 .add-button:hover {
-  background-color: #3e8e41; /* Verde más oscuro al pasar el ratón */
+  background-color: #3e8e41;
 }
 
 button {
