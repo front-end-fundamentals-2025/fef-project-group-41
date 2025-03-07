@@ -1,12 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel:wght@400..900&family=Glory:ital,wght@0,100..800;1,100..800&family=League+Gothic&family=Macondo&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Grotesk:wght@300..700&family=Ysabeau+SC:wght@1..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
-
 img {
   height: 100%;
   max-width: 100%;
 }
-
 
 .titu {
   font-size: 60px;
@@ -44,20 +42,23 @@ footer {
   color: red;
 }
 
-* {
+body {
+  background-color: black;
+  color: white;
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
   background-color: black;
   color: white;
+  margin: 0;
 }
 
-.home,
-.menu,
-.car {
-  color: black;
+.home svg path,
+.car svg path {
+  fill: white;
 }
+
 .grid,
 .grid-container {
   display: grid;
@@ -68,13 +69,12 @@ footer {
   padding-right: 40px;
   gap: 50px;
 }
-.botones{
+.botones {
   padding-left: 40px;
 }
 .grid figure {
   margin: 0;
   text-align: center;
-
 }
 
 .grid img {
@@ -89,7 +89,6 @@ footer {
   position: relative;
   display: flex;
   justify-content: center;
-  
 }
 
 .grid-container img {
@@ -125,40 +124,69 @@ footer {
   opacity: 1;
 }
 
-.home{
+.home {
   display: inline;
-
 }
-.car{
+.car {
   display: inline;
   text-align: right;
 }
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+  gap: 20px; /* Espacio entre las columnas */
+  padding: 20px; /* Añade un poco de espacio alrededor del grid */
+}
+
+.product-image img {
+  max-width: 100%; /* La imagen no debe exceder el ancho del contenedor */
+  height: auto;
+}
+
+.add-to-cart {
+  text-align: center; /* Centra el botón */
+  padding: 20px; /* Añade un poco de espacio alrededor del botón */
+}
+
+.add-button {
+  background-color: #4caf50; /* Verde */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #3e8e41; /* Verde más oscuro al pasar el ratón */
+}
 
 button {
-  border-radius: 10px; 
-  box-shadow: none; 
-  padding: 10px 20px; 
-  border: 1px solid white; 
-  background-color: transparent; 
-  color: white; 
+  border-radius: 10px;
+  box-shadow: none;
+  padding: 10px 20px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
   font-size: 16px;
   cursor: pointer;
-  
 }
 
 button:hover {
-  background-color: rgba(255, 255, 255, 0.2); 
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-input{
-
-  border-radius: 10px; 
-  box-shadow: none; 
-  padding: 10px 20px; 
-  border: 1px solid white; 
-  color: white; 
+input {
+  border-radius: 10px;
+  box-shadow: none;
+  padding: 10px 20px;
+  border: 1px solid white;
+  color: white;
   font-size: 16px;
-  
 }
 
 .cabeza {
@@ -172,7 +200,7 @@ input{
   flex-direction: row-reverse;
 }
 
-.animacion{
+.animacion {
   position: relative;
   width: 400px;
   height: 300px;
@@ -187,15 +215,33 @@ input{
   opacity: 0;
   animation: changeImage 8s infinite;
 }
-.animacion img:nth-child(1) { animation-delay: 0s; }
-.animacion img:nth-child(2) { animation-delay: 2s; }
-.animacion img:nth-child(3) { animation-delay: 4s; }
-.animacion img:nth-child(4) { animation-delay: 6s; }
-.animacion img:nth-child(5) { animation-delay: 8s; }
+.animacion img:nth-child(1) {
+  animation-delay: 0s;
+}
+.animacion img:nth-child(2) {
+  animation-delay: 2s;
+}
+.animacion img:nth-child(3) {
+  animation-delay: 4s;
+}
+.animacion img:nth-child(4) {
+  animation-delay: 6s;
+}
+.animacion img:nth-child(5) {
+  animation-delay: 8s;
+}
 
 @keyframes changeImage {
-  0% { opacity: 0; }
-  20% { opacity: 1; }
-  40% { opacity: 0; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
