@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping cart</title>
     <link rel="stylesheet" href="css/main.css" />
-    <script src="carro.js" defer> </script>
+    <script src="js/carro.js" defer></script>
   </head>
   <body>
     <header>
 
-      <a href="main.html"
+      <a href="index.html"
         ><div class="home">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -69,10 +69,14 @@
     </header>
 
     <main>
-      <h2>Carrito de Compras</h2>
-      <div id="cart-items"></div>
-      <button id="clear-cart">Vaciar carrito</button>
+      <div class="products" id="cart-items">
+          <!-- Cart items will be displayed here -->
+      </div>
+      <div class="vaciar">
+          <button id="clear-cart">Clear Cart</button>
+      </div>
   </main>
+  
   
     <footer>
       <p>Dejanos tu correo ...</p>
