@@ -338,7 +338,6 @@ input {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin: 20px;
   transition: background 0.3s;
 }
 
@@ -373,20 +372,3 @@ input {
   font-size: 2em;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .product-grid {
-      grid-template-columns: 1fr;
-      padding: 20px;
-  }
-
-  .cart-item {
-      flex-direction: column;
-      text-align: center;
-  }
-
-  .cart-item-image {
-      width: 150px;
-      height: 150px;
-  }
-}
