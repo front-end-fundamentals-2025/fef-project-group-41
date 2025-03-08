@@ -34,7 +34,10 @@ a {
 footer {
   padding-bottom: 50px;
   padding-top: 80px;
-  padding-left: 20px;
+  padding-left: 40px;
+}
+footer p{
+  padding-bottom: 30px;
 }
 
 .material-icons {
@@ -56,6 +59,14 @@ footer {
 .car svg path {
   fill: white;
 }
+.home, .car{
+  padding-left: 40px;
+  padding-top: 40px;
+  display: inline;
+}
+header{
+  padding-top: 40px;
+}
 
 .grid,
 .grid-container {
@@ -69,6 +80,7 @@ footer {
 }
 .botones {
   padding-left: 40px;
+  padding-top: 50px;
 }
 .grid figure {
   margin: 0;
@@ -122,13 +134,7 @@ footer {
   opacity: 1;
 }
 
-.home {
-  display: inline;
-}
-.car {
-  display: inline;
-  text-align: right;
-}
+
 .product-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -195,9 +201,6 @@ input {
 }
 
 .cabeza {
-  /*display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-bottom: 40px;*/
   display: flex;
   align-items: center;
   justify-content: center;

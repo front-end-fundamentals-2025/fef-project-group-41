@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping cart</title>
     <link rel="stylesheet" href="css/main.css" />
+    <script src="carro.js"> </script>
   </head>
   <body>
     <header>
@@ -53,19 +54,27 @@
     
         <h1>
           <div class="titu">The</div>
-          <br />Furniture Loft
+          Furniture Loft
         </h1>
       </div>
 
-      <a class="button" href="chairs.html"><button>Chairs</button></a>
-      <a class="button" href="furniture.html"><button>Furniture</button></a>
-      <a class="button" href="tables.html"><button>Tables</button></a>
-      <button>Lamps</button>
-      <button>Beds</button>
-      <button>Sofas</button>
+      <div class="botones">
+        <a class="button" href="chairs.html"><button>Chairs</button></a>
+        <a class="button" href="furniture.html"><button>Furniture</button></a>
+        <a class="button" href="tables.html"><button>Tables</button></a>
+        <button>Lamps</button>
+        <button>Beds</button>
+        <button>Sofas</button>
+  </div>
     </header>
 
-    <main></main>
+    <main>
+
+      <div id="cart-items"></div>
+      <button id="clear-cart">Vaciar carrito</button>
+      
+    </main>
+
     <footer>
       <p>Dejanos tu correo ...</p>
       <input type="text" />
