@@ -19,14 +19,12 @@ function addToCart(id, name, price, image) {
   updateCartDisplay();
 }
 
-// Remove item from car
 function removeFromCart(id) {
   cart = cart.filter(item => item.id !== id);
   saveCart();
   updateCartDisplay();
 }
 
-//quantity
 function updateQuantity(id, newQuantity) {
   const item = cart.find(item => item.id === id);
   if (item) {
@@ -36,19 +34,18 @@ function updateQuantity(id, newQuantity) {
   }
 }
 
-// Clear car
 function clearCart() {
   cart = [];
   saveCart();
   updateCartDisplay();
 }
 
-// Calculate total
+
 function calculateTotal() {
   return cart.reduce((total, item) => total + (item.price * item.quantity), 0);
 }
 
-// Update car display
+
 function updateCartDisplay() {
   const cartContainer = document.getElementById('cart-items');
   if (!cartContainer) return;
@@ -64,14 +61,15 @@ function updateCartDisplay() {
     const itemElement = document.createElement('div');
     itemElement.className = 'cart-item';
     itemElement.innerHTML = `
+    <link rel="stylesheet" href="../css/main.css" />
       <img src="${item.image}" alt="${item.name}" class="cart-item-image">
       <div class="cart-item-details">
         <h3>${item.name}</h3>
         <p>Price: $${item.price.toFixed(2)}</p>
         <div class="quantity-controls">
-          <button onclick="updateQuantity('${item.id}', ${item.quantity - 1})">-</button>
+          <button onclick="updateQuantity('${item.id}', ${item.quantity - 1})"><div class = "menos">-</div></button>
           <span>${item.quantity}</span>
-          <button onclick="updateQuantity('${item.id}', ${item.quantity + 1})">+</button>
+          <button onclick="updateQuantity('${item.id}', ${item.quantity + 1})"><div class ="mas">+</div></button>
         </div>
         <p>Total: $${(item.price * item.quantity).toFixed(2)}</p>
         <button onclick="removeFromCart('${item.id}')">Remove</button>
