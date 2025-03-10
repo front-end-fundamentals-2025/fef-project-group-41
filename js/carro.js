@@ -56,8 +56,6 @@ function updateCartDisplay() {
   }
 
   cart.forEach((item) => {
-    console.log("Imagen cargada:", item.image);
-
     const itemElement = document.createElement("div");
     itemElement.className = "cart-item";
     itemElement.innerHTML = `
