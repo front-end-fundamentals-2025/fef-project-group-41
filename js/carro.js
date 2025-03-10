@@ -7,6 +7,10 @@ function saveCart() {
 
 // Add item to car
 function addToCart(id, name, price, image) {
+  if (image.startsWith("../")) {
+    image = image.replace(/^..\//, "");
+  }
+
   const existingItem = cart.find((item) => item.id === id);
 
   if (existingItem) {
